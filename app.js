@@ -10,8 +10,8 @@ const mongoURI = process.env.MONGODB_URI;
 
 // Conexión a la base de datos
 mongoose.connect(mongoURI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+
+
    
    
 })
