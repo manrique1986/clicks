@@ -5,7 +5,7 @@ const clickRoutes = require('./routes/clickRoutes');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 const mongoURI = process.env.MONGODB_URI;
 
 // Conexión a la base de datos
