@@ -1,4 +1,4 @@
-const Click = require('../models/clickModel');
+const Click = require("../models/clickModel");
 
 exports.registerClick = async (req, res) => {
   try {
@@ -8,9 +8,9 @@ exports.registerClick = async (req, res) => {
     }
     click.count++;
     await click.save();
-    res.json({ count: click.count });
+    res.json({ count: click.count, Date: click.date});
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Error interno del servidor' });
+    res.status(500).json({ error: "Error interno del servidor" });
   }
 };
